@@ -94,6 +94,7 @@ Uses **Machine Learning classification models** to generate recommendations.
 # 📂 Project Structure
 
 
+
 AgriguardAI/
 │
 ├── dataset/ # Training datasets
@@ -109,6 +110,7 @@ AgriguardAI/
 
 
 ---
+
 
 # ⚙️ Installation Guide
 
