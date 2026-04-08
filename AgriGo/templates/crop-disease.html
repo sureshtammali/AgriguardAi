@@ -1,9 +1,13 @@
 {% extends "index.html" %}
 {% block content %}
-<div class="container pt-5">
-  <h1 class="text-center" style="color: #8CE17D;">Crop Disease Prediction</h1>
-  <p class="text-center pt-3">Our models provide you an easy,fast and efficient way to detect diseases in your plants.
-  </p>
+
+<section id="feature">
+<div class="title-text">
+  <p>DISEASE DETECTION</p>
+  <h1>Crop Disease Prediction</h1>
+</div>
+<div style="width: 80%; margin: auto; text-align: center;">
+  <p style="font-size: 18px; padding-bottom: 30px;">Our AI-powered models provide you an easy, fast and efficient way to detect diseases in your plants with GPT-2 enhanced accuracy.</p>
 </div>
 <form action="{{ url_for('find_crop_disease')}}" method="POST" enctype="multipart/form-data"
   style="margin-top: 30px; width: 80%; text-align: center; margin: auto">
@@ -47,11 +51,8 @@
   </div>
 
 </form>
-<br>
-<br>
-<br>
 
-<script type="text/javascript">
+<script type="text/javascript;">
   function preview_image(event) {
     var reader = new FileReader();
     reader.onload = function () {
@@ -61,6 +62,6 @@
     reader.readAsDataURL(event.target.files[0]);
   }
 </script>
-<hr>
+</section>
 
 {% endblock %}
